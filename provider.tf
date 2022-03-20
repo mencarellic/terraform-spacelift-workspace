@@ -1,3 +1,13 @@
-provider "spacelift" {
-  api_key_endpoint = "https://mencarellic.app.spacelift.io"
+terraform {
+  required_providers {
+    spacelift = {
+      source  = "spacelift-io/spacelift"
+      version = "0.1.11"
+    }
+  }
 }
+
+provider "spacelift" {
+  # Configuration options
+}
+
